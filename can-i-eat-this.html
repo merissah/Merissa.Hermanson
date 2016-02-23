@@ -1,0 +1,122 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Portfolio Items.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="Title" -->
+<title>Merissa Hermanson Design</title>
+<!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400' rel='stylesheet' type='text/css'>
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+<!-- =============================================================================================== --> 
+<!-- Nav Bar --> 
+<!-- =============================================================================================== -->
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div id="nav-logo" class="navbar-brand"><a href="index.html"><img class="img-responsive" src="img/logo.png" alt="Merissa Hermanson Design"></a></div>
+      </div>
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a onclick="$('#start').animatescroll();" href="index.html#start">START</a></li>
+          <li><a onclick="$('#about').animatescroll();" href="index.html#about">ABOUT</a></li>
+          <li><a onclick="$('#tools').animatescroll();" href="index.html#tools">TOOLS</a></li>
+          <li><a onclick="$('#portfolio').animatescroll();" href="index.html#portfolio">PORTFOLIO</a></li>
+          <li><a onclick="$('#contact').animatescroll();" href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- InstanceBeginEditable name="Content" --> 
+
+<!-- =============================================================================================== --> 
+<!-- Jumbotron --> 
+<!-- =============================================================================================== -->
+
+<div class="jumbotron" id="can-I-eat-this"></div>
+<div class="container portfolio-content">
+  <div class="row">
+    <div class="col-md-9">
+      <h2>Can I Eat This?</h2>
+      <p>Montezuma’s revenge, Delhi belly, or travelers’ diarrhea—whatever you call it, an illness from unclean food or water can ruin your international trip. This app is designed to prevent travelers’ diarrhea and other illnesses. You simply select the country you’re in and answer a few simple questions about what you’re thinking about eating or drinking, and Can I Eat This? will tell you whether it’s likely to be safe. The client wanted a design that was colorful and fun. It also had to look similar to their sister app TravWell. I went with a bright, happy color scheme, and an international map as a subtle background. Since this app was really simple I felt using the photographs as the navigation would be the best experience for the user.</p>
+    </div>
+    <div class="col-md-3">
+      <h3>Type</h3>
+      <p>Mobile Application</p>
+      <h3>Client</h3>
+      <p>CDC Travelers' Health</p>
+    </div>
+  </div>
+  <div class="row portpage-pic app">
+  <div class="pic"><img class="img-responsive" src="img/port-eat1.jpg" alt="Screen shot of 'Can I Eat This?'"></div>
+  <div class="pic"><img class="img-responsive" src="img/port-eat2.jpg" alt="Screen shot of 'Can I Eat This?'"></div> 
+   <div class="pic"><img class="img-responsive" src="img/port-eat3.jpg" alt="Screen shot of 'Can I Eat This?'"></div>
+    <div class="pic"><img class="img-responsive" src="img/port-eat5.jpg" alt="Screen shot of 'Can I Eat This?'"></div>
+  </div>
+</div>
+<!-- InstanceEndEditable -->
+
+
+
+<!-- =============================================================================================== --> 
+<!-- Footer --> 
+<!-- =============================================================================================== -->
+<footer class="row">
+  <div class="container">
+    <ul class="social-media">
+      <li class="fadeTo"><a href="https://plus.google.com/share?url=http%3A%2F%2Fmerissahermanson.com"target="_blank"><img src="img/g+.png" alt="Google Plus"></a></li>
+      <li class="fadeTo"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/pintrist.png" alt="Pintrist"></a></li>
+      <li class="fadeTo"><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a></li>
+      <li class="fadeTo"><a href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- =============================================================================================== --> 
+<!-- Javascript --> 
+<!-- =============================================================================================== --> 
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/scrollReveal.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/easing.js"></script> 
+<script src="js/animatescroll.min.js"></script>
+<!-- InstanceBeginEditable name="javascript" -->
+
+<!-- InstanceEndEditable -->
+<script>
+
+ window.sr = new scrollReveal();
+
+
+<!-- FadeTo Rollover -->
+
+$(document).ready(function() {
+
+     $('.fadeTo').hover(function(){
+    	$(this).find('img').stop().fadeTo('slow',.5);}, function(){
+    $(this).find('img').stop().fadeTo('slow',1);
+	});
+
+});
+    
+
+<!-- Scroll-spy -->
+$(document).ready(function() {
+$('body').scrollspy({ target: '.navbar-example' }) 		 
+});
+
+
+</script>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Portfolio Items.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="Title" -->
+<title>Merissa Hermanson Design</title>
+<!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400' rel='stylesheet' type='text/css'>
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+<!-- =============================================================================================== --> 
+<!-- Nav Bar --> 
+<!-- =============================================================================================== -->
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div id="nav-logo" class="navbar-brand"><a href="index.html"><img class="img-responsive" src="img/logo.png" alt="Merissa Hermanson Design"></a></div>
+      </div>
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a onclick="$('#start').animatescroll();" href="index.html#start">START</a></li>
+          <li><a onclick="$('#about').animatescroll();" href="index.html#about">ABOUT</a></li>
+          <li><a onclick="$('#tools').animatescroll();" href="index.html#tools">TOOLS</a></li>
+          <li><a onclick="$('#portfolio').animatescroll();" href="index.html#portfolio">PORTFOLIO</a></li>
+          <li><a onclick="$('#contact').animatescroll();" href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- InstanceBeginEditable name="Content" --> 
+
+<!-- =============================================================================================== --> 
+<!-- Jumbotron --> 
+<!-- =============================================================================================== -->
+
+<div class="jumbotron" id="vost"></div>
+<div class="container portfolio-content">
+  <div class="row">
+    <div class="col-md-9">
+      <h2>VOST</h2>
+      <p>This simple little site was created for emergency management & disaster recovery volunteers to self-register and allow gathering of training, experience and criteria needed to place them. I designed and built the site on my own. The client requested that I use Google forms to collect the all of the information. I only used color for the five main places the user should go to register, steering them exactly to where they needed to go. I really wanted the images and the overall feel of the home page to emphasize how important volunteering really is and motivate them to help. I also think the black and white gives the destructive images a more dramatic feel. I used CSS animations and a parallax scrolling effect to give it some added interest.</p>
+    </div>
+    <div class="col-md-3">
+      <h3>Type</h3>
+      <p>Responsive Website</p>
+      <h3>Client</h3>
+      <p>Virtual Operations Support Teams (VOST)</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="portpage-pic">
+      <div class="pic"><img class="img-responsive" src="img/port-vost3.jpg" alt="Screen shot of VOST"></div>
+      <div class="pic"><img class="img-responsive" src="img/port-vost.jpg" alt="Screen shot of VOST"></div>
+      <div class="pic"><img class="img-responsive" src="img/port-vost2.jpg" alt="Screen shot of VOST"></div>
+    </div>
+  </div>
+</div>
+<!-- InstanceEndEditable -->
+
+
+
+<!-- =============================================================================================== --> 
+<!-- Footer --> 
+<!-- =============================================================================================== -->
+<footer class="row">
+  <div class="container">
+    <ul class="social-media">
+      <li class="fadeTo"><a href="https://plus.google.com/share?url=http%3A%2F%2Fmerissahermanson.com"target="_blank"><img src="img/g+.png" alt="Google Plus"></a></li>
+      <li class="fadeTo"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/pintrist.png" alt="Pintrist"></a></li>
+      <li class="fadeTo"><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a></li>
+      <li class="fadeTo"><a href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- =============================================================================================== --> 
+<!-- Javascript --> 
+<!-- =============================================================================================== --> 
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/scrollReveal.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/easing.js"></script> 
+<script src="js/animatescroll.min.js"></script>
+<!-- InstanceBeginEditable name="javascript" --> <!-- InstanceEndEditable -->
+<script>
+
+ window.sr = new scrollReveal();
+
+
+<!-- FadeTo Rollover -->
+
+$(document).ready(function() {
+
+     $('.fadeTo').hover(function(){
+    	$(this).find('img').stop().fadeTo('slow',.5);}, function(){
+    $(this).find('img').stop().fadeTo('slow',1);
+	});
+
+});
+    
+
+<!-- Scroll-spy -->
+$(document).ready(function() {
+$('body').scrollspy({ target: '.navbar-example' }) 		 
+});
+
+
+</script>
+</body>
+<!-- InstanceEnd --></html>
