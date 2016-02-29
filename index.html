@@ -16,22 +16,7 @@
 <link href="css/animate.css" rel="stylesheet">
 </head>
 
-<script type="text/javascript"> 
-var $buoop = {}; 
-$buoop.ol = window.onload; 
-window.onload=function(){ 
- try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
- var e = document.createElement("script"); 
- e.setAttribute("type", "text/javascript"); 
- e.setAttribute("src", "//browser-update.org/update.js"); 
- document.body.appendChild(e); 
-} 
-</script>
-
 <body data-spy="scroll" data-target="#navbar">
-<!-- =============================================================================================== --> 
-<!-- Nav Bar --> 
-<!-- =============================================================================================== -->
 <div class="container">
   <nav class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
     <div class="container">
@@ -51,12 +36,8 @@ window.onload=function(){
     </div>
   </nav>
 </div>
-
-<!-- =============================================================================================== --> 
-<!-- Jumbotron --> 
-<!-- =============================================================================================== -->
-
 <div class="jumbotron start" id="start">
+  <div id="table"></div>
   <div class="container">
     <h2>Welcome to my</h2>
     <h1>STUDIO</h1>
@@ -67,30 +48,23 @@ window.onload=function(){
     </ul>
     <div class="desk">
       <div id="computer"><img class="img-responsive" src="img/computer.png" alt="computer"/></div>
-      <div id="tabletop-easel"><img class="img-responsive" src="img/tabletop-easel.png" alt="Table-top Easel"/></div>
-      <div id="pens"><img class="img-responsive" src="img/pens.png" alt="pens"/></div>
+      <div id="tabletop-easel"><img class="img-responsive" src="img/easel.png" alt="Table-top Easel"/></div>
+      <div id="pencils"><img class="img-responsive" src="img/Pencils.png" alt="pencils"/></div>
       <div id="brushes"><img class="img-responsive" src="img/brushes.png" alt="brushes"/></div>
-      <div id="phone"><img class="img-responsive" src="img/phone.png" alt="smart phone"/></div>
-      <div id="easel-top"><img class="img-responsive" src="img/easel-top.png" alt="Paint Easel"/></div>
-      <div id="tablet"><img class="img-responsive" src="img/tablet.png" alt="tablet"/></div>
-      <div id="bucket"><img class="img-responsive" src="img/bucket.png" alt="paint bucket"/></div>
       <div id="viewport"></div>
-      <div id="mug"><img class="img-responsive" src="img/mug.png" alt="mug with hot steam"/></div>
-      <div id="books"><img class="img-responsive hidden-xs" src="img/books.png" alt="books"/></div>
-      <div id="lamp"><img class="img-responsive hidden-xs" src="img/lamp.png" alt="lamp"/></div>
+      <div id="mug"><img class="img-responsive" src="img/Coffee-cup.png" alt="mug with hot steam"/></div>
+      <div id="books"><img class="img-responsive hidden-xs" src="img/Books-Plant.png" alt="books"/></div>
+      <div id="palette"><img class="img-responsive" src="img/palette.png" alt="tablet"/></div>
     </div>
-    <div id="text1">
+    
+<!--<div id="text1">
       <h2>I am designer and an artist. The way I see it . . .</h2>
     </div>
     <div id="text2" class="animate">
       <h2>A digital design is just a painting that never dries.</h2>
-    </div>
+    </div> -->
   </div>
 </div>
-
-<!-- =============================================================================================== --> 
-<!-- About --> 
-<!-- =============================================================================================== -->
 <div class="row" id="about">
   <div class="container blue">
     <h2>A little <strong>ABOUT</strong> me</h2>
@@ -315,9 +289,6 @@ window.onload=function(){
     </p>
   </div>
 </div>
-<!-- =============================================================================================== --> 
-<!-- Footer --> 
-<!-- =============================================================================================== -->
 <footer class="row">
   <div class="container">
     <ul class="social-media">
@@ -337,214 +308,10 @@ window.onload=function(){
 <script src="js/scrollReveal.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/easing.js"></script> 
-<script src="js/animatescroll.min.js"></script> 
-<script>
-
-
-   window.sr = new scrollReveal();
-
-
-<!-- FadeTo Rollover -->
-
-$(document).ready(function() {
-
-     $('.fadeTo').hover(function(){
-    	$(this).find('img').stop().fadeTo('slow',.5);}, function(){
-    $(this).find('img').stop().fadeTo('slow',1);
-	});
-
-});
-    
-	<!-- clock -->
-        $(document).ready(function() {
-         
-              setInterval( function() {
-              var seconds = new Date().getSeconds();
-              var sdegree = seconds * 6;
-              var srotate = "rotate(" + sdegree + "deg)";
-              
-              $("#sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
-                  
-              }, 1000 );
-              
-         
-              setInterval( function() {
-              var hours = new Date().getHours();
-              var mins = new Date().getMinutes();
-              var hdegree = hours * 30 + (mins / 2);
-              var hrotate = "rotate(" + hdegree + "deg)";
-              
-              $("#hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
-                  
-              }, 1000 );
-        
-        
-              setInterval( function() {
-              var mins = new Date().getMinutes();
-              var mdegree = mins * 6;
-              var mrotate = "rotate(" + mdegree + "deg)";
-              
-              $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
-                  
-              }, 1000 );
-         
-        });
-		
-		
-<!-- steam -->
-
-(function () {
-  "use strict";
-
-  var i = 0;
-  for (; i < 5; i += 1) {
-    setTimeout(function addSmoke() {
-      var
-        time = Math.random() * 1000 + 3000,
-        smoke = $('<div />', {
-          class: 'smoke',
-          css: {
-            opacity: 0,
-            left: Math.random() * 30
-          }
-        });
-      
-      // add to viewport
-      $(smoke).appendTo('#viewport');
-
-      // animate
-      $.when(
-        // animate to 100% opacity in half the time (fade in)
-        $(smoke).animate({
-          opacity: 1
-        }, {
-          duration: time / 2,
-          easing: 'linear',
-          queue: false,
-          
-          // animate to 0% opacity in the remaining time (fade out)
-          complete: function () {
-            $(smoke).animate({
-              opacity: 0
-            }, {
-              duration: time / 2,
-              easing: 'linear',
-              queue: false
-            });
-          }
-        }),
-
-        // animate movement
-        $(smoke).animate({
-          bottom: $('#viewport').height()
-        }, {
-          duration: time * 1.4,
-          easing: 'linear',
-          queue: false
-        })
-
-      // when all down, remove and add new random smoke
-      ).then(function () {
-        $(smoke).remove();
-        addSmoke();
-      });
-    }, Math.random() * 10000);
-  }
-}());
-
-
-<!-- Animate when scrolled to -->
-$(window).scroll(function() {
-		$('#bucket, #easel-top').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+650) {
-				$(this).addClass("animated bounceInRight");
-			}
-		});
-	});
-	
-$(window).scroll(function() {
-		$('#brushes').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+600) {
-				$(this).addClass("animated bounceInLeft");
-			}
-		});
-	});
-	
-$(window).scroll(function() {
-		$('#text2').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+800) {
-				$(this).addClass("animated bounceInLeft");
-			}
-		});
-	});		
-
-
-$(window).scroll(function() {
-		$('#tabletop-easel').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+200) {
-				$(this).addClass("animated bounceInDown");
-			}
-		});
-	});
-	
-$(window).scroll(function() {
-		$('#tablet').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+600) {
-				$(this).addClass("animated fadeOutUpBig");
-			}
-		});
-	});
-
-$(window).scroll(function() {
-		$('#pens, #phone').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+640) {
-				$(this).addClass("animated fadeOutRightBig");
-			}
-		});
-	});
-	
-	$(window).scroll(function() {
-		$('#computer').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+200) {
-				$(this).animate({ 
-        top: "-=500px",
-      },1000 );
-			}
-		});
-	});	
-
-<!-- Scroll-spy -->
-$(document).ready(function() {
-$('body').scrollspy({ target: '.navbar-example' }) 		 
-});
-
-$('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy('refresh')
-})
-
-
-</script>
+<script src="js/animatescroll.min.js"></script>
+<script src="js/TweenMax.min.js"></script> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="js/custom.js"></script>  
 <noscript>This page uses Javascript. Your browser either
 doesn't support Javascript or you have it turned off.
 To see this page as it is meant to appear please use

@@ -11,14 +11,14 @@ body {
 	color: #5E5E5E;
 	position: relative;
 }
- a, {
+ a, button, input[type=submit] {
  -webkit-transition: all 0.5s ease-in-out;
  -moz-transition: all 0.5s ease-in-out;
  -o-transition: all 0.5s ease-in-out;
  -ms-transition: all 0.5s ease-in-out;
  transition: all 0.5s ease-in-out;
- color: #5691B6;
 }
+
 a:hover, a:hover h2, a:hover h3 {
 	text-decoration: none;
 	color: #5E5E5E;
@@ -26,6 +26,10 @@ a:hover, a:hover h2, a:hover h3 {
 .navbar-nav li a {
 	font-size: 14px;
 }
+.navbar-default {
+	background-color: #fff;
+}
+
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
 	background-color: #C9C9C8;
 	color: white;
@@ -46,11 +50,12 @@ h3 {
 	padding-bottom: 30px;
 }
 .start {
-	background: url(../img/bkg.png);
+	background: url(../img/Bricks.jpg);
+	background-size: 370px;
 	text-align: center;
 	padding-top: 30px;
-	padding-bottom: 620px;
-	margin-bottom: 0px;
+	padding-bottom: 500px;
+	margin-bottom: 80px;
 }
 #in-progress {
 	background-image: url(../img/in-progress.png);
@@ -79,7 +84,18 @@ h3 {
 .blue h2 strong {
 	color: #5691B6;
 }
-#computer, #books, #lamp, #pens, #tablet, #phone, #text1, #text2, #mug, #tabletop-easel, #brushes, #bucket, #easel-top {
+
+#table {
+	background: url(../img/Table.jpg);
+    padding-bottom: 50px;
+    position: absolute;
+    top: 575px;
+    height: 233px;
+    width: 100%;
+    right: 0;
+}
+
+#computer, #books, #lamp, #pencils, #palette, #phone, #text1, #text2, #mug, #tabletop-easel, #brushes, #easel-top {
 	position: absolute;
 }
 #computer, #desk-bkg, #text1, #text2, #tabletop-easel {
@@ -88,22 +104,25 @@ h3 {
 	left: 0;
 	right: 0;
 }
-#tabletop-easel, #brushes, #easel-top, #bucket, #text2 {
+#tabletop-easel, #brushes, #palette, #text2 {
 	visibility: hidden;
 }
 #computer {
-	width: 420px;
-	top: 220px;
+	width: 720px;
+	top: 230px;
 	z-index: 1;
+	left: 250px;
 }
 #tabletop-easel {
-	width: 420px;
+	width: 600px;
 	top: 205px;
 	z-index: 1;
+	left:190px;
 }
 #books {
 	left: 15px;
-	top: 190px;
+	top: 310px;
+    width: 500px;
 }
 #lamp {
 	right: 25px;
@@ -112,20 +131,28 @@ h3 {
 #desk-bkg .img-responsive {
 	display: inline-block;
 }
-#pens, #brushes {
-	top: 380px;
-	right: 17%;
+#pencils, #brushes {
+	top: 330px;
+	right: 2%;
 	z-index: 3;
+	width: 250px;
 }
+
+#pencils {
+	top:390px;
+}
+
 #mug {
-	top: 470px;
-	right: 26%;
+	top: 580px;
+	right: 20%;
 	z-index: 4;
+	width:110px;
 }
-#tablet, #bucket {
-	top: 420px;
-	left: 23%;
+#palette{
+	top: 580px;
+	left: 20%;
 	z-index: 2;
+	width: 250px;
 }
 #phone, #easel-top {
 	top: 580px;
@@ -142,12 +169,14 @@ h3 {
 
 #clock {
 	position: absolute;
-	right: 22%;
+	right: 18%;
 	width: 135px;
 	height: 135px;
 	background: url(../img/clockface.png) no-repeat;
 	list-style: none;
 	top: 110px;
+	box-shadow: 6px 6px 10px 1px rgba(0,0,0,0.32);
+	border-radius: 90px;
 }
 #sec, #min, #hour {
 	position: absolute;
@@ -176,8 +205,8 @@ p {
 
 #viewport {
 	position: absolute;
-	top: 200px;
-	right: 27%;
+	top: 270px;
+	right: 23%;
 	width: 50px;
 	height: 350px;
 	overflow: hidden;
@@ -724,7 +753,7 @@ opacity: 1;
 	margin-top: 100px;
 }
 #computer {
-	top: 210px;
+	top: 230px;
 	width: 330px;
 }
 #tabletop-easel {
@@ -736,18 +765,18 @@ opacity: 1;
 	top: 100px;
 }
 #books {
-	top: 190px;
+	top: 310px;
 	width: 280px;
 }
 #lamp {
 	top: 270px;
 	width: 180px;
 }
-#tablet, #bucket {
+#palette{
 	width: 110px;
 	top: 380px;
 }
-#pens, #brushes {
+#pencils, #brushes {
 	width: 65px;
 }
 #mug {
@@ -815,12 +844,12 @@ opacity: 1;
 	width: 170px;
 	right: 15px;
 }
-#tablet, #bucket {
+#palette{
 	width: 100px;
 	left: 150px;
 	top: 380px;
 }
-#pens, #brushes {
+#pencils, #brushes {
 	width: 50px;
 	top: 350px;
 	right: 140px;
@@ -915,7 +944,7 @@ opacity: 1;
 	width: 270px;
 	top: 150px;
 }
-#pens, #brushes {
+#pencils, #brushes {
 	width: 50px;
 	top: 330px;
 	right: 20px;
@@ -929,7 +958,7 @@ opacity: 1;
 	right: 11%;
 	top: 80px;
 }
-#tablet, #bucket {
+#palette{
 	width: 80px;
 	top: 365px;
 	left: 20px;
