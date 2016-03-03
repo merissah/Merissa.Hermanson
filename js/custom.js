@@ -113,7 +113,10 @@ $(document).ready(function() {
     }
   });
 
-  var computer = TweenMax.fromTo(".start #computer", 1, {top: -$(window).height()/3, left:370, rotation:20}, {top:10, rotation:-20});
+  var swap = new TimelineMax()
+    .add([
+        TweenMax.to("#start #computer", 1, {bottom: $(window).height(), top:"-=400"})
+      ]);
 
   var startpin = new ScrollMagic.Scene({
     duration: 700
@@ -122,10 +125,10 @@ $(document).ready(function() {
   .addTo(controller);
 
   var computerSwap = new ScrollMagic.Scene({
-    offset:20,
-    duration: 400
+    duration: 300,
+    offset:260
   })
-  .setTween(computer)
+  .setTween(swap)
   .addTo(controller);
 
   // Scene Handler

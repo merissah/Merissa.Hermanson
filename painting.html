@@ -13,9 +13,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-<!-- =============================================================================================== --> 
-<!-- Nav Bar --> 
-<!-- =============================================================================================== -->
+
 <div class="container">
   <nav class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
     <div class="container">
@@ -35,10 +33,6 @@
     </div>
   </nav>
 </div>
-<!-- =============================================================================================== --> 
-<!-- Jumbotron --> 
-<!-- =============================================================================================== -->
-
 <div class="jumbotron" id="painting"></div>
 <div class="container blue painting">
   <h2><strong>PAINTING</strong></h2>
@@ -435,9 +429,7 @@
       </a> </div>
   </div>
 </div>
-<!-- =============================================================================================== --> 
-<!-- Footer --> 
-<!-- =============================================================================================== -->
+
 <footer class="row">
   <div class="container">
     <ul class="social-media">
@@ -449,90 +441,14 @@
   </div>
 </footer>
 
-<!-- =============================================================================================== --> 
-<!-- Javascript --> 
-<!-- =============================================================================================== --> 
 
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> 
 <script src="js/scrollReveal.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/easing.js"></script> 
 <script src="js/animatescroll.min.js"></script> 
-<script src="js/imagelightbox.min.js"></script> 
-<script>
+<script src="js/imagelightbox.min.js"></script>
+<script src="js/painting.js"></script>  
 
-// LIGHTBOX
-
-$( function()
-	{
-			// ACTIVITY INDICATOR
-
-		var activityIndicatorOn = function()
-			{
-				$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
-			},
-			activityIndicatorOff = function()
-			{
-				$( '#imagelightbox-loading' ).remove();
-			},
-
-
-			// OVERLAY
-
-			overlayOn = function()
-			{
-				$( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
-			},
-			overlayOff = function()
-			{
-				$( '#imagelightbox-overlay' ).remove();
-			},
-
-
-			// CLOSE BUTTON
-
-			closeButtonOn = function( instance )
-			{
-				$( '<button type="button" id="imagelightbox-close" title="Close"></button>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
-			},
-			closeButtonOff = function()
-			{
-				$( '#imagelightbox-close' ).remove();
-			};
-			
-		//	Used Parameters
-
-		$('a').imageLightbox(
-		{
-			onStart:		function() { overlayOn(); closeButtonOn(); },
-			onEnd:			function() { overlayOff(); closeButtonOff(); activityIndicatorOff(); },
-			onLoadStart: 	function() { activityIndicatorOn(); },
-			onLoadEnd:	 	function() { activityIndicatorOff(); $( '.imagelightbox-arrow' ).css( 'display', 'block' ); }
-		});
-
-	});
-
- window.sr = new scrollReveal(); 
-
-
-<!-- FadeTo Rollover -->
-
-$(document).ready(function() {
-
-     $('.fadeTo').hover(function(){
-    	$(this).find('img').stop().fadeTo('slow',.5);}, function(){
-    $(this).find('img').stop().fadeTo('slow',1);
-	});
-
-});
-    
-
-<!-- Scroll-spy -->
-$(document).ready(function() {
-$('body').scrollspy({ target: '.navbar-example' }) 		 
-});
-
-
-</script>
 </body>
 </html>
