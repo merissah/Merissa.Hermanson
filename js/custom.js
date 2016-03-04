@@ -113,37 +113,19 @@ $(document).ready(function() {
     }
   });
 
-  var swap = new TimelineMax()
-    .add([
-        TweenMax.to("#start #computer", 1, {bottom: $(window).height(), top:"-=400"})
-      ]);
-
   var startpin = new ScrollMagic.Scene({
     duration: 700
   })
   .setPin(".start")
   .addTo(controller);
 
-  var computerSwap = new ScrollMagic.Scene({
-    duration: 300,
+  var SceneZoom = new ScrollMagic.Scene({
+    duration: 200,
     offset:260
   })
-  .setTween(swap)
+  .setTween(zoom)
   .addTo(controller);
 
-  // Scene Handler
-  /*var scene = new ScrollMagic.Scene({
-    triggerElement: ".start", // point of execution
-    duration: $(window).height() - 300, // pin element for the window height - 1
-    triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
-    reverse: true // allows the effect to trigger when scrolled in the reverse direction
-  })
-  .setPin(".start"); // the element we want to pin
-
-  // Add Scenes to ScrollMagic Controller
-  controller.addScene([
-    scene
-  ]);*/
 
   /*$(window).scroll(function() {
   		$('#palette').each(function(){
