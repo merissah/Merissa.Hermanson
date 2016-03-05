@@ -113,18 +113,130 @@ $(document).ready(function() {
     }
   });
 
+  TweenMax.set("#tabletop-easel", {top: "-=800"});
+  TweenMax.set("#palette", {left: "-=800"});
+  TweenMax.set("#brushes", {right: "-=800"});
+  var $computer = $("#computer");
+  var $easel = $("#tabletop-easel");
+  var $palette = $("#palette");
+  var $pencils = $("#pencils");
+  var $brushes = $("#brushes");
+  // build tween
+  var swap = new TimelineMax()
+ 
+    .to("#computer", 1, {
+        onStart: function () {$computer.addClass("animated bounceOutUp").removeClass("bounceInDown");},
+        onReverseComplete: function () {$computer.removeClass("bounceOutUp").addClass("bounceInDown");}}
+    )
+
+    .to("#tabletop-easel", 1, {top: "+=800",
+        onStart: function () {$easel.addClass("animated bounceInDown").removeClass("bounceOutUp");},
+        onReverseComplete: function () {$easel.removeClass("bounceInDown").addClass("bounceOutUp");}
+        }
+    )
+    .to("#palette", 1, {left: "+=800",
+        onStart: function () {$palette.addClass("animated bounceInLeft").removeClass("bounceOutLeft");},
+        onReverseComplete: function () {$palette.removeClass("bounceInLeft").addClass("bounceOutLeft");}
+        }
+    )
+    .to("#pencils", 1, {
+        onStart: function () {$pencils.addClass("animated bounceOutUp").removeClass("bounceInDown");},
+        onReverseComplete: function () {$pencils.removeClass("bounceOutUp").addClass("bounceInDown");}}
+    )
+
+    .to("#brushes", 1, {right: "+=800",
+        onStart: function () {$brushes.addClass("animated bounceInRight").removeClass("bounceOutRight");},
+        onReverseComplete: function () {$brushes.removeClass("bounceInRight").addClass("bounceOutRight");}
+        }
+    );
+
+
+  function pathPrepare ($el) {
+    var lineLength = $el[0].getTotalLength();
+    $el.css("stroke-dasharray", lineLength);
+    $el.css("stroke-dashoffset", lineLength);
+  }
+
+  var $a1 = $("path#a1");
+  var $a2 = $("path#a2");
+  var $p1 = $("path#p1");
+  var $p2 = $("path#p2");
+  var $ainting = $("path#ainting");
+  var $line1 = $("path#line1");
+  var $dot1 = $("path#dot1");
+  var $dot2 = $("path#dot2");
+  var $That = $("path#That");
+  var $line2 = $("path#line2");
+  var $line3 = $("path#line3");
+  var $N = $("path#N");
+  var $ever = $("path#ever");
+  var $D = $("path#D");
+  var $ries = $("path#ries");
+  var $dot3 = $("path#dot3");
+
+  // prepare SVG
+  pathPrepare($a1);
+  pathPrepare($a2);
+  pathPrepare($p1);
+  pathPrepare($p2);
+  pathPrepare($ainting);
+  pathPrepare($dot1);
+  pathPrepare($dot2);
+  pathPrepare($line1);
+  pathPrepare($That);
+  pathPrepare($line2);
+  pathPrepare($line3);
+  pathPrepare($N);
+  pathPrepare($ever);
+  pathPrepare($D);
+  pathPrepare($ries);
+  pathPrepare($dot3);
+
+  // build tween
+  var tween = new TimelineMax()
+    .add(TweenMax.to($a1, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($a2, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($p1, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($p2, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($ainting, .05, {strokeDashoffset: 0, ease:Linear.easeNone})) 
+    .add(TweenMax.to($dot1, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($dot2, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($line1, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($That, .1, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($line2, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($line3, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($N, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($ever, .1, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($D, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($ries, .1, {strokeDashoffset: 0, ease:Linear.easeNone}))  
+    .add(TweenMax.to($dot3, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.from("path", 1, {opacity: 0, ease:Linear.easeNone}), 0);      // change color during the whole thing
+
+
   var startpin = new ScrollMagic.Scene({
     duration: 700
   })
   .setPin(".start")
   .addTo(controller);
 
-  var SceneZoom = new ScrollMagic.Scene({
+  var SceneSwap = new ScrollMagic.Scene({
     duration: 200,
-    offset:260
+    offset:100
   })
-  .setTween(zoom)
+  .setTween(swap)
   .addTo(controller);
+
+   // build scene
+  var SceneText = new ScrollMagic.Scene({
+    duration: 200,
+    offset:300,
+    tweenChanges: true
+  })
+  .setTween(tween)
+  .addIndicators() // add indicators (requires plugin)
+  .addTo(controller);
+
+
 
 
   /*$(window).scroll(function() {

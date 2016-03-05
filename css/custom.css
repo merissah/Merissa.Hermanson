@@ -46,7 +46,6 @@ h2 {
 	margin-bottom: 50px;
 }
 h3 {
-	font-weight: 900;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -67,7 +66,7 @@ h3 {
 	padding-bottom: 37%;
 	margin-bottom: 0px;
 }
-#in-progress h2 {
+#start h2 {
 	margin-bottom: 120px;
 	margin-top: 0px;
 }
@@ -78,9 +77,6 @@ h3 {
 	font-size: 2.8em;
 	margin-top: 60px;
 	font-family: 'Lato', sans-serif;
-}
-.start h2 {
-	margin-top:0;
 }
 
 #table {
@@ -102,9 +98,9 @@ h3 {
 	left: 0;
 	right: 0;
 }
-#tabletop-easel, #brushes, #palette, #text2 {
+/*#tabletop-easel, #brushes, #palette, #text2 {
 	visibility: hidden;
-}
+}*/
 #computer {
 	width: 860px;
 	top: 220px;
@@ -115,14 +111,16 @@ h3 {
 #start .screen {
 	position:absolute;
 	z-index: 3;
-	right: 0;
-    left: 0;
+    left: 0px;
+    right:37%;
+    top:50px;
     margin: auto;
     max-width: 490px;
+    padding:30px;
 }
 
-#start .screen h4 {
-	padding:80px 30px 50px; 
+#start .screen h3 {
+	padding:10px 0; 
 	color: #fff;
 }
 
@@ -134,11 +132,21 @@ h3 {
 }
 
 #tabletop-easel {
-	width: 600px;
-	top: 205px;
+	width: 680px;
+	top: 195px;
 	z-index: 1;
 	left:190px;
 }
+
+#tabletop-easel #painting-text {
+    padding: 95px 20px;
+    position: absolute;
+    top: 0;
+    right: 230px;
+    left: 0;
+    margin: auto;
+}
+
 #books {
 	left: 15px;
 	top: 360px;
@@ -151,15 +159,18 @@ h3 {
 #desk-bkg .img-responsive {
 	display: inline-block;
 }
-#pencils, #brushes {
-	top: 330px;
-	right: 2%;
+#brushes {
+	top: 370px;
+	right: 1%;
 	z-index: 3;
-	width: 200px;
+	width: 250px;
 }
 
 #pencils {
 	top:490px;
+	width: 180px;
+	z-index: 3;
+	right: 2%;
 }
 
 #mug {
@@ -169,8 +180,8 @@ h3 {
 	width:110px;
 }
 #palette{
-	top: 580px;
-	left: 20%;
+	top: 630px;
+	left: 21%;
 	z-index: 2;
 	width: 250px;
 }
@@ -179,12 +190,10 @@ h3 {
 	right: 20%;
 	z-index: 2;
 }
-#text1 {
-	top: 590px;
+#text-second {
+	display: none;
 }
-#text2 {
-	top: 630px;
-}
+
 /* Clock */
 
 #clock {
@@ -240,6 +249,73 @@ p {
 	background: url(../img/large-steam.png) no-repeat;
 	bottom: 0px;
 }
+
+/* Dripper */
+
+.dripwrapper {
+   z-index: 50;
+   width: 50px;
+   position: absolute;
+   right: 0px;
+   left:250px;
+   margin:auto;
+   height: 100%;
+   top: 350px;
+} 
+.dripper, .drop {
+  position: absolute;
+  background: blue;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.drop {
+border-top-left-radius: 80% 85%;
+border-top-right-radius: 55% 50%;
+border-bottom-right-radius: 3px 80%;
+border-bottom-left-radius: 55% 50%;
+transform: rotateZ(-138deg);
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  -webkit-animation: drips 30s cubic-bezier(1, 0.75, 0.98, 1.3) 200ms infinite;
+}
+
+@-webkit-keyframes drips {
+  0% {
+    top: 60px;
+    width: 8px;
+    height: 8px;
+  }
+  10% {
+    top: 80px;
+    width: 8px;
+    height: 8px;
+  }
+  35% {
+    top: 85px;
+    width: 30px;
+    height: 30px;
+  }
+  49% {
+    top: 100%;
+  }
+  100% {
+    top: 101%;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
+
 /* About */
 
 #about, #portfolio, .painting {
