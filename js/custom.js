@@ -45,12 +45,9 @@ $(document).ready(function() {
 
   (function () {
     "use strict";
-
-    var i = 0;
-    for (; i < 5; i += 1) {
+    var i = 0; for (; i < 5; i += 1) {
       setTimeout(function addSmoke() {
-        var
-          time = Math.random() * 1000 + 3000,
+        var time = Math.random() * 1000 + 3000,
           smoke = $('<div />', {
             class: 'smoke',
             css: {
@@ -210,13 +207,20 @@ $(document).ready(function() {
     .add(TweenMax.to($D, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
     .add(TweenMax.to($ries, .1, {strokeDashoffset: 0, ease:Linear.easeNone}))  
     .add(TweenMax.to($dot3, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
-    .add(TweenMax.from("path", 1, {opacity: 0, ease:Linear.easeNone}), 0);      // change color during the whole thing
+    .add(TweenMax.from("path", 1, {opacity: 0, ease:Linear.easeNone}), 0)// change color during the whole thing
+    .add(TweenMax.to(".dripwrapper", .5, {opacity: 1, ease:Linear.easeNone}), 0); 
 
 
   var startpin = new ScrollMagic.Scene({
-    duration: 700
+    duration: 600
   })
   .setPin(".start")
+  .addTo(controller);
+
+  var drippin = new ScrollMagic.Scene({
+    duration: 600
+  })
+  .setPin(".dripwrapper")
   .addTo(controller);
 
   var SceneSwap = new ScrollMagic.Scene({

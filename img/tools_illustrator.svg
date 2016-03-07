@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="140.8px" height="116.5px" viewBox="0 0 140.8 116.5" enable-background="new 0 0 140.8 116.5" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- Copyright 1992, 1994, 1997, 2000, 2004 Adobe Systems Incorporated. All rights reserved. Myriad is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+<font-face font-family="MyriadPro-Bold" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500" d="M0,0l500,0l0,700l-500,0M250,395l-170,255l340,0M280,350l170,255l0,-510M80,50l170,255l170,-255M50,605l170,-255l-170,-255z"/>
+<glyph unicode="I" horiz-adv-x="285" d="M66,674l0,-674l153,0l0,674z"/>
+<glyph unicode="a" horiz-adv-x="528" d="M476,0C471,27 469,72 469,119l0,170C469,404 417,500 254,500C165,500 98,476 64,457l28,-98C124,379 177,396 227,396C302,396 316,359 316,333l0,-7C143,327 29,266 29,139C29,61 88,-11 187,-11C245,-11 295,10 327,49l3,0l9,-49M321,178C321,169 320,160 318,152C308,121 277,96 239,96C205,96 179,115 179,154C179,213 241,232 321,231z"/>
+<glyph unicode="l" horiz-adv-x="275" d="M61,0l152,0l0,710l-152,0z"/>
+<glyph unicode="o" horiz-adv-x="577" d="M294,500C137,500 33,399 33,241C33,83 143,-11 286,-11C417,-11 544,71 544,250C544,397 444,500 294,500M290,392C359,392 387,318 387,245C387,157 349,98 290,98C225,98 190,161 190,245C190,317 217,392 290,392z"/>
+<glyph unicode="r" horiz-adv-x="380" d="M61,0l152,0l0,248C213,260 214,272 216,282C226,329 264,359 320,359C337,359 350,357 361,355l0,143C350,500 343,500 329,500C282,500 222,470 197,399l-4,0l-5,90l-131,0C59,447 61,400 61,328z"/>
+<glyph unicode="s" horiz-adv-x="434" d="M33,24C70,4 127,-10 191,-10C331,-10 403,57 403,148C402,220 363,267 270,299C210,320 191,332 191,355C191,380 212,395 249,395C291,395 333,379 355,367l27,105C352,487 301,500 244,500C123,500 45,431 45,340C44,282 83,227 184,193C241,174 256,162 256,137C256,112 237,96 191,96C146,96 88,116 60,133z"/>
+<glyph unicode="t" horiz-adv-x="367" d="M82,595l0,-106l-65,0l0,-112l65,0l0,-200C82,108 96,61 124,32C148,7 189,-10 238,-10C281,-10 317,-5 337,3l-1,115C325,116 310,114 291,114C245,114 231,141 231,200l0,177l109,0l0,112l-109,0l0,140z"/>
+<glyph unicode="u" horiz-adv-x="583" d="M522,489l-153,0l0,-291C369,186 368,174 364,165C354,141 330,112 288,112C235,112 212,155 212,226l0,263l-153,0l0,-287C59,51 132,-11 231,-11C319,-11 365,39 384,69l3,0l7,-69l132,0C524,41 522,93 522,157z"/>
+</font>
+
+	<font horiz-adv-x="2048">
+<!-- Arial is a trademark of The Monotype Corporation in the United States and/or other countries. -->
+<!-- Copyright: Copyright 2016 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Arial-BoldMT" units-per-em="2048" underline-position="-217" underline-thickness="215"/>
+<missing-glyph horiz-adv-x="1536" d="M256,0l0,1280l1024,0l0,-1280M288,32l960,0l0,1216l-960,0z"/>
+<glyph unicode="A" horiz-adv-x="1479" d="M1471,0l-322,0l-128,333l-586,0l-121,-333l-314,0l571,1466l313,0M926,580l-202,544l-198,-544z"/>
+<glyph unicode="i" horiz-adv-x="569" d="M147,1206l0,260l281,0l0,-260M147,0l0,1062l281,0l0,-1062z"/>
+</font>
+
+	<g>
+	<g>
+		<g>
+			<rect x="0" y="90.7" fill="none" width="156.7" height="43.4"/>
+			<text transform="matrix(1 0 0 1 1.220703e-04 112.8961)" fill="#666666" font-family="'MyriadPro-Bold'" font-size="31.2048px">Illustrator</text>
+		</g>
+		<g>
+			<path fill="#EE8B21" d="M71.6,73.7c-10.6,0-21.3,0-31.9,0c-3.7,0-5.9-2.2-5.9-5.8c0-20.7,0.1-41.4,0.1-62.1
+				c0-3.5,2.3-5.7,5.8-5.7C61,0,82.2,0,103.5,0c3.3,0,5.4,2,5.4,5.3c0.1,18.4,0.1,36.9,0.2,55.3c0,2.5,0.1,5.1,0,7.6
+				c-0.1,3.4-2.2,5.4-5.6,5.4C92.9,73.7,82.2,73.7,71.6,73.7z"/>
+		</g>
+	</g>
+	<rect x="36.2" y="18.6" fill="none" width="69.4" height="50.2"/>
+	<text transform="matrix(1 0 0 1 45.545 54.9205)" fill="#FDDA73" font-family="'Arial-BoldMT'" font-size="50.6644px">Ai</text>
+</g>
+</svg>
