@@ -1,6 +1,11 @@
 window.sr = new scrollReveal();
 
 $(document).ready(function() {
+
+  $('.fadeTo').hover(function(){
+    $(this).find('img').stop().fadeTo('slow',.5);}, function(){
+    $(this).find('img').stop().fadeTo('slow',1);
+	});
     
 //clock 
          
@@ -105,9 +110,9 @@ $(document).ready(function() {
     }
   });
 
-  TweenMax.set("#tabletop-easel", {top: "-=950"});
-  TweenMax.set("#palette", {left: "-=950"});
-  TweenMax.set("#brushes", {right: "-=950"});
+  TweenMax.set("#tabletop-easel", {top: "-=800"});
+  TweenMax.set("#palette", {left: "-=800"});
+  TweenMax.set("#brushes", {right: "-=800"});
   var $computer = $("#computer");
   var $easel = $("#tabletop-easel");
   var $palette = $("#palette");
@@ -121,12 +126,12 @@ $(document).ready(function() {
         onReverseComplete: function () {$computer.removeClass("bounceOutUp").addClass("bounceInDown");}}
     )
 
-    .to("#tabletop-easel", 1, {top: "+=950",
+    .to("#tabletop-easel", 1, {top: "+=800",
         onStart: function () {$easel.addClass("animated bounceInDown").removeClass("bounceOutUp");},
         onReverseComplete: function () {$easel.removeClass("bounceInDown").addClass("bounceOutUp");}
         }
     )
-    .to("#palette", 1, {left: "+=950",
+    .to("#palette", 1, {left: "+=800",
         onStart: function () {$palette.addClass("animated bounceInLeft").removeClass("bounceOutLeft");},
         onReverseComplete: function () {$palette.removeClass("bounceInLeft").addClass("bounceOutLeft");}
         }
@@ -136,7 +141,7 @@ $(document).ready(function() {
         onReverseComplete: function () {$pencils.removeClass("bounceOutUp").addClass("bounceInDown");}}
     )
 
-    .to("#brushes", 1, {right: "+=950",
+    .to("#brushes", 1, {right: "+=800",
         onStart: function () {$brushes.addClass("animated bounceInRight").removeClass("bounceOutRight");},
         onReverseComplete: function () {$brushes.removeClass("bounceInRight").addClass("bounceOutRight");}
         }
@@ -209,17 +214,17 @@ $(document).ready(function() {
   var startpin = new ScrollMagic.Scene({
     duration: 600
   })
-  .setPin(".start", {pushFollowers: false})
+  .setPin(".start")
   .addTo(controller);
 
-  var startpin = new ScrollMagic.Scene({
+  var drippin = new ScrollMagic.Scene({
     duration: 600
   })
-  .setPin("#about")
+  .setPin(".dripwrapper")
   .addTo(controller);
 
   var SceneSwap = new ScrollMagic.Scene({
-    duration: 250,
+    duration: 200,
     offset:100
   })
   .setTween(swap)
@@ -227,8 +232,8 @@ $(document).ready(function() {
 
    // build scene
   var SceneText = new ScrollMagic.Scene({
-    duration: 250,
-    offset:350,
+    duration: 200,
+    offset:300,
     tweenChanges: true
   })
   .setTween(tween)

@@ -21,22 +21,22 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <div id="nav-logo" class="navbar-brand"><a href="index.html"><img class="img-responsive" src="img/logo.svg" alt="Merissa Hermanson Design"></a></div>
+        <div id="nav-logo" class="navbar-brand"><a href="index.html"><img class="img-responsive" src="img/logo.png" alt="Merissa Hermanson Design"></a></div>
       </div>
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html#start">START</a></li>
-          <li><a href="index.html#about">ABOUT</a></li>
-          <li><a href="index.html#tools">TOOLS</a></li>
-          <li><a href="index.html#portfolio">PORTFOLIO</a></li>
-          <li><a href="index.html#contact">CONTACT</a></li>
+          <li><a onclick="$('#start').animatescroll();" href="index.html#start">START</a></li>
+          <li><a onclick="$('#about').animatescroll();" href="index.html#about">ABOUT</a></li>
+          <li><a onclick="$('#tools').animatescroll();" href="index.html#tools">TOOLS</a></li>
+          <li><a onclick="$('#portfolio').animatescroll();" href="index.html#portfolio">PORTFOLIO</a></li>
+          <li><a onclick="$('#contact').animatescroll();" href="index.html#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
 
-<div class="jumbotron port-bkg" id="travwell"></div>
+<div class="jumbotron" id="travwell"></div>
 <div class="container portfolio-content">
   <div class="row">
     <div class="col-md-9">
@@ -50,22 +50,17 @@
       <p>CDC Travelers' Health</p>
     </div>
   </div>
-   <div class="port-button">
-    <a href="https://play.google.com/store/apps/details?id=gov.cdc.oid.ncezid.travwell&hl=en" target="_blank">
-      <button type="button" class="btn btn-default btn-lg">View in Google Play</button>
-    </a> 
-  </div>
   <div class="row">
-    <div class="portpage-pic app">
-      <div class="pic"><img class="img-responsive" src="img/port-travwell.png" alt="Screen shot of Travwell"></div>
-      <div class="pic"><img class="img-responsive" src="img/port-travwell1.png" alt="Screen shot of Travwell"></div>
-      <div class="pic"><img class="img-responsive" src="img/port-travwell2.png" alt="Screen shot of Travwell'"></div> 
-      <div class="pic"><img class="img-responsive" src="img/port-travwell2-2.png" alt="Screen shot of Travwell'"></div>
-      <div class="pic"><img class="img-responsive" src="img/port-travwell3.png" alt="Screen shot of Travwell"></div>
-      <div class="pic"><img class="img-responsive" src="img/port-travwell4.png" alt="Screen shot of Travwell"></div>
-      <div class="pic"><img class="img-responsive" src="img/port-travwell5.png" alt="Screen shot of Travwell"></div>
-      <div class="pic"><img class="img-responsive" src="img/port-travwell6.png" alt="Screen shot of Travwell"></div>
-    </div>
+  <div class="portpage-pic app">
+  <div class="pic"><img class="img-responsive" src="img/port-travwell.png" alt="Screen shot of Travwell"></div>
+  <div class="pic"><img class="img-responsive" src="img/port-travwell1.png" alt="Screen shot of Travwell"></div>
+  <div class="pic"><img class="img-responsive" src="img/port-travwell2.png" alt="Screen shot of Travwell'"></div> 
+  <div class="pic"><img class="img-responsive" src="img/port-travwell2-2.png" alt="Screen shot of Travwell'"></div>
+   <div class="pic"><img class="img-responsive" src="img/port-travwell3.png" alt="Screen shot of Travwell"></div>
+    <div class="pic"><img class="img-responsive" src="img/port-travwell4.png" alt="Screen shot of Travwell"></div>
+    <div class="pic"><img class="img-responsive" src="img/port-travwell5.png" alt="Screen shot of Travwell"></div>
+    <div class="pic"><img class="img-responsive" src="img/port-travwell6.png" alt="Screen shot of Travwell"></div>
+  </div>
   </div>
 </div>
 
@@ -79,7 +74,13 @@
     </ul>
   </div>
 </footer>
+
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js"></script>  
+<script src="js/scrollReveal.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/easing.js"></script> 
+<script src="js/animatescroll.min.js"></script>
+<script src="js/custom.js"></script>  
+
 </body>
 </html>
