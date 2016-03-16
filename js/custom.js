@@ -1,7 +1,9 @@
-window.sr = new scrollReveal();
-$('body').scrollspy({ target: '#navbar' });
+window.sr = new scrollReveal();   
 
 $(document).ready(function() {
+
+//Scroll-spy
+$('body').scrollspy({ target: '#navbar' });  
     
 //clock 
          
@@ -25,7 +27,6 @@ $(document).ready(function() {
       
   }, 1000 );
 
-
   setInterval( function() {
   var mins = new Date().getMinutes();
   var mdegree = mins * 6;
@@ -34,9 +35,7 @@ $(document).ready(function() {
   $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
       
   }, 1000 );
-               
-		
-		
+               		
 //steam
 
   (function () {
@@ -237,95 +236,5 @@ $(document).ready(function() {
   .setTween(tween)
   .addIndicators() 
   .addTo(controller);
-
-
-
-  /*$(window).scroll(function() {
-  		$('#palette').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+650) {
-  				$(this).addClass("animated bounceInRight");
-  			}
-  		});
-  	});
-  	
-  $(window).scroll(function() {
-  		$('#brushes').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+600) {
-  				$(this).addClass("animated bounceInLeft");
-  			}
-  		});
-  	});
-  	
-  $(window).scroll(function() {
-  		$('#text2').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+800) {
-  				$(this).addClass("animated bounceInLeft");
-  			}
-  		});
-  	});		
-
-
-  $(window).scroll(function() {
-  		$('#tabletop-easel').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+200) {
-  				$(this).addClass("animated bounceInDown");
-  			}
-  		});
-  	});
-  	
-  $(window).scroll(function() {
-  		$('#palette').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+600) {
-  				$(this).addClass("animated bounceInRight");
-  			}
-  		});
-  	});
-
-  $(window).scroll(function() {
-  		$('#pencils, #phone').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+640) {
-  				$(this).addClass("animated fadeOutRightBig");
-  			}
-  		});
-  	});
-  	
-  	$(window).scroll(function() {
-  		$('#computer').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+200) {
-  				$(this).animate({ 
-          top: "-=500px",
-        },1000 );
-  			}
-  		});
-  	});*/	
-
-//Scroll-spy
-
-  $('body').scrollspy({ target: '.navbar-example' }) 		 
-
-  $('[data-spy="scroll"]').each(function () {
-    var $spy = $(this).scrollspy('refresh')
-  })
 
 });

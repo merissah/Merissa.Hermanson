@@ -735,6 +735,15 @@ footer {
 	padding: 2em;
 }
 
+.social-media a img {
+	width:40px;
+	height: 40px;
+}
+
+.social-media a:hover {
+	opacity: 0.6;
+}
+
 /* Lightbox */
 /* =============================================================================================== */
 
@@ -1298,5 +1307,13 @@ opacity: 1;
 @media screen and (max-width: 580px) {
 	#books{
 		display:none;
+	}
+	#start.jumbotron {
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.start h1 {
+		font-size: 23px;
 	}
 }

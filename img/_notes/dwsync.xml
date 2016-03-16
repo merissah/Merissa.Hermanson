@@ -31,7 +31,7 @@
 <file name="desk.png" server="www.merissahermanson.com" local="130481330038085936" remote="130606334400000000" Dst="1" />
 <file name="csepp.jpg" server="www.merissahermanson.com" local="130488201422304803" remote="130606334400000000" Dst="1" />
 <file name="easel-top.png" server="www.merissahermanson.com" local="130491306907640696" remote="130606334400000000" Dst="1" />
-<file name="facebook.png" server="www.merissahermanson.com" local="130482229355420312" remote="130606334400000000" Dst="1" />
+<file name="sm_fb.svg" server="www.merissahermanson.com" local="130482229355420312" remote="130606334400000000" Dst="1" />
 <file name="eat.jpg" server="www.merissahermanson.com" local="130486504234286411" remote="130606334400000000" Dst="1" />
 <file name="easel.png" server="www.merissahermanson.com" local="130482160129058876" remote="130606334400000000" Dst="1" />
 <file name="favicon-100.png" server="www.merissahermanson.com" local="130493255080000000" remote="130606334400000000" Dst="1" />
@@ -39,7 +39,7 @@
 <file name="favicon.ico" server="www.merissahermanson.com" local="130493256280000000" remote="130606334400000000" Dst="1" />
 <file name="fact-sheets.jpg" server="www.merissahermanson.com" local="130485416844637434" remote="130606334400000000" Dst="1" />
 <file name="favicon3.ico" server="www.merissahermanson.com" local="130493255310000000" remote="130606334400000000" Dst="1" />
-<file name="g+.png" server="www.merissahermanson.com" local="130482229039236162" remote="130606334400000000" Dst="1" />
+<file name="sm_g+.svg" server="www.merissahermanson.com" local="130482229039236162" remote="130606334400000000" Dst="1" />
 <file name="hourhand.png" server="www.merissahermanson.com" local="130480949970000000" remote="130606334400000000" Dst="1" />
 <file name="hcw.jpg" server="www.merissahermanson.com" local="130486507708873005" remote="130606334400000000" Dst="1" />
 <file name="icon-illustration.png" server="www.merissahermanson.com" local="130481345267656256" remote="130606334400000000" Dst="1" />
@@ -60,7 +60,7 @@
 <file name="pens.png" server="www.merissahermanson.com" local="130480938700000000" remote="130606336800000000" Dst="1" />
 <file name="phone.png" server="www.merissahermanson.com" local="130480938810000000" remote="130606336800000000" Dst="1" />
 <file name="photography.png" server="www.merissahermanson.com" local="130482189934520669" remote="130606336800000000" Dst="1" />
-<file name="pintrist.png" server="www.merissahermanson.com" local="130482229183268626" remote="130606336800000000" Dst="1" />
+<file name="sm_pintrist.svg" server="www.merissahermanson.com" local="130482229183268626" remote="130606336800000000" Dst="1" />
 <file name="port-cal-print1.jpg" server="www.merissahermanson.com" local="130490883710585231" remote="130606336800000000" Dst="1" />
 <file name="port-cal-print2.jpg" server="www.merissahermanson.com" local="130490877568703328" remote="130606336800000000" Dst="1" />
 <file name="port-cal-print3.jpg" server="www.merissahermanson.com" local="130490875916117029" remote="130606336800000000" Dst="1" />
@@ -141,7 +141,7 @@
 <file name="tools-bkg.png" server="www.merissahermanson.com" local="130482181623281248" remote="130606338600000000" Dst="1" />
 <file name="travwell.jpg" server="www.merissahermanson.com" local="130486504462789076" remote="130606338600000000" Dst="1" />
 <file name="thumbnail.jpg" server="www.merissahermanson.com" local="130507841398281248" remote="130606338600000000" Dst="1" />
-<file name="twitter.png" server="www.merissahermanson.com" local="130482229493229247" remote="130606339200000000" Dst="1" />
+<file name="sm_twitter.svg" server="www.merissahermanson.com" local="130482229493229247" remote="130606339200000000" Dst="1" />
 <file name="vost.jpg" server="www.merissahermanson.com" local="130486505248408312" remote="130606339200000000" Dst="1" />
 <file name="web-outline.PNG" server="www.merissahermanson.com" local="130488214969629102" remote="130606339200000000" Dst="1" />
 <file name="animation.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482189686526496" remote="130606382400000000" Dst="1" />
@@ -175,7 +175,7 @@
 <file name="csepp.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130488201422304803" remote="130606382400000000" Dst="1" />
 <file name="desk.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130481330038085936" remote="130606382400000000" Dst="1" />
 <file name="easel-top.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130491306907640696" remote="130606382400000000" Dst="1" />
-<file name="facebook.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229355420312" remote="130606382400000000" Dst="1" />
+<file name="sm_fb.svg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229355420312" remote="130606382400000000" Dst="1" />
 <file name="eat.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130486504234286411" remote="130606382400000000" Dst="1" />
 <file name="easel.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482160129058876" remote="130606382400000000" Dst="1" />
 <file name="favicon-100.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130493255080000000" remote="130606382400000000" Dst="1" />
@@ -183,7 +183,7 @@
 <file name="favicon.ico" server="www.merissahermanson.com//MerissaHermanson.com/" local="130493256280000000" remote="130606382400000000" Dst="1" />
 <file name="fact-sheets.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130485416844637434" remote="130606382400000000" Dst="1" />
 <file name="favicon3.ico" server="www.merissahermanson.com//MerissaHermanson.com/" local="130493255310000000" remote="130606382400000000" Dst="1" />
-<file name="g+.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229039236162" remote="130606382400000000" Dst="1" />
+<file name="sm_g+.svg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229039236162" remote="130606382400000000" Dst="1" />
 <file name="hourhand.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130480949970000000" remote="130606382400000000" Dst="1" />
 <file name="icon-illustration.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130481345267656256" remote="130606382400000000" Dst="1" />
 <file name="hcw.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130486507708873005" remote="130606382400000000" Dst="1" />
@@ -204,7 +204,7 @@
 <file name="pens.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130480938700000000" remote="130606384200000000" Dst="1" />
 <file name="phone.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130480938810000000" remote="130606384200000000" Dst="1" />
 <file name="photography.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482189934520669" remote="130606384200000000" Dst="1" />
-<file name="pintrist.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229183268626" remote="130606384200000000" Dst="1" />
+<file name="sm_pintrist.svg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229183268626" remote="130606384200000000" Dst="1" />
 <file name="port-cal-print1.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130490883710585231" remote="130606384200000000" Dst="1" />
 <file name="port-cal-print2.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130490877568703328" remote="130606384200000000" Dst="1" />
 <file name="port-cal-print3.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130490875916117029" remote="130606384200000000" Dst="1" />
@@ -285,7 +285,7 @@
 <file name="tools-bkg.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482181623281248" remote="130606386000000000" Dst="1" />
 <file name="travwell.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130486504462789076" remote="130606386000000000" Dst="1" />
 <file name="thumbnail.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130507841398281248" remote="130606386000000000" Dst="1" />
-<file name="twitter.png" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229493229247" remote="130606386000000000" Dst="1" />
+<file name="sm_twitter.svg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130482229493229247" remote="130606386000000000" Dst="1" />
 <file name="web-outline.PNG" server="www.merissahermanson.com//MerissaHermanson.com/" local="130488214969629102" remote="130606386000000000" Dst="1" />
 <file name="vost.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130486505248408312" remote="130606386000000000" Dst="1" />
 <file name="z-fold.jpg" server="www.merissahermanson.com//MerissaHermanson.com/" local="130486084030000000" remote="130606386000000000" Dst="1" />
