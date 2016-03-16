@@ -1,4 +1,5 @@
 window.sr = new scrollReveal();
+$('body').scrollspy({ target: '#navbar' });
 
 $(document).ready(function() {
     
@@ -203,21 +204,23 @@ $(document).ready(function() {
     .add(TweenMax.to($ries, .1, {strokeDashoffset: 0, ease:Linear.easeNone}))  
     .add(TweenMax.to($dot3, .05, {strokeDashoffset: 0, ease:Linear.easeNone}))
     .add(TweenMax.from("path", 1, {opacity: 0, ease:Linear.easeNone}), 0)// change color during the whole thing
-    .add(TweenMax.to(".dripwrapper", .5, {opacity: 1, ease:Linear.easeNone}), 0); 
+    .add(TweenMax.to(".dripwrapper", .5, {opacity: 1, ease:Linear.easeNone}), 0);
 
 
+  // Pin both the Desk and About sections 
   var startpin = new ScrollMagic.Scene({
     duration: 600
   })
   .setPin(".start", {pushFollowers: false})
   .addTo(controller);
 
-  var startpin = new ScrollMagic.Scene({
+  var startpin1 = new ScrollMagic.Scene({
     duration: 600
   })
   .setPin("#about")
   .addTo(controller);
 
+  // Computer Easel Swap Scene
   var SceneSwap = new ScrollMagic.Scene({
     duration: 250,
     offset:100
@@ -225,7 +228,7 @@ $(document).ready(function() {
   .setTween(swap)
   .addTo(controller);
 
-   // build scene
+  // Draw on SVG Text Scene
   var SceneText = new ScrollMagic.Scene({
     duration: 250,
     offset:350,
@@ -234,7 +237,6 @@ $(document).ready(function() {
   .setTween(tween)
   .addIndicators() 
   .addTo(controller);
-
 
 
 
