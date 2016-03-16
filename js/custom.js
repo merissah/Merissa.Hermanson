@@ -95,6 +95,12 @@ $('body').scrollspy({ target: '#navbar' });
   }());
 
 
+  // Scroll on button click
+
+  $("#learnMore").click(function(){
+    $('#pencils').animatescroll({});
+  });
+
   //////////Animate when scrolled to/////////////
 
 
@@ -234,7 +240,6 @@ $('body').scrollspy({ target: '#navbar' });
     tweenChanges: true
   })
   .setTween(tween)
-  .addIndicators() 
   .addTo(controller);
 
 });

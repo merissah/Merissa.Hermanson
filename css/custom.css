@@ -141,16 +141,10 @@ h3 {
 }
 
 #start .screen h3 {
-	padding:10px 0; 
+	padding:10px 0 5% 0; 
 	color: #fff;
 }
 
-#start .screen .btn {
-	border:none;
-	cursor: default;
-	background-color: #fff;
-	color:#5691B6;
-}
 
 #books {
 	left: 15px;
@@ -461,21 +455,7 @@ hr {
 #contact h3 {
 	padding:0;
 }
-#contact .btn-primary {
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-	background-color: transparent;
-	border: 3px solid white;
-	color: #FFF;
-}
-#contact .btn-primary:hover {
-	background-color: #FFF;
-	border-color: #FFF;
-	color: #000;
-}
+
 .btn-lg {
 	padding: 15px 32px;
 }
@@ -714,6 +694,22 @@ footer {
 .btn-primary:hover {
 	background-color: #5FB2D8;
 	border-color:#5FB2D8;
+}
+
+.btn-primary.inverse {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	background-color: transparent;
+	border: 3px solid white;
+	color: #FFF;
+}
+.btn-primary.inverse:hover {
+	background-color: #FFF;
+	border-color: #FFF;
+	color: #5FB2D8;
 }
 
 .videos {
@@ -1315,5 +1311,8 @@ opacity: 1;
 
 	.start h1 {
 		font-size: 23px;
+	}
+	#contact h3 {
+		font-size: 16px;
 	}
 }
