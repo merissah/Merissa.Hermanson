@@ -232,7 +232,7 @@ $(document).ready(function() {
     tweenChanges: true
   })
   .setTween(tween)
-  .addIndicators() // add indicators (requires plugin)
+  .addIndicators() 
   .addTo(controller);
 
 
