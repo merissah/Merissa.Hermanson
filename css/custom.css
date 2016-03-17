@@ -618,14 +618,15 @@ footer {
 }
 .portpage-pic .pic {
 	display: inline-block;
-	margin: .7em;
+	margin: .7em auto;
 	height: auto;
 	position: relative;
-	width: 70%;
 }
-.app .pic {
-	width: 46.5%;
+
+.portpage-pic .pic.web, .portpage-pic .pic.phone, .portpage-pic .pic.video-container {
+	width:70%;
 }
+
 .pic img, .video-container {
 	width: 100%;
 	height: auto;
