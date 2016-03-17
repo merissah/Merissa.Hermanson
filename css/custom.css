@@ -40,7 +40,7 @@ a:hover, a:hover h2, a:hover h3 {
 	padding: 5px 15px;
 }
 
-.navbar-brand img {
+.navbar-brand object {
 	height: 60px;
 }
 
@@ -311,7 +311,7 @@ p {
 	padding-top: 30px;
 }
 
-#about img {
+#about object {
 	max-height: 150px;
 }
 #about img, #portfolio img, .painting img {
@@ -340,7 +340,7 @@ p {
 	padding:20px 70px;
 }
 
-#tools ul li img {
+#tools ul li object {
 	max-width: 65%;
 	text-align: center;
     line-height: 150px;
@@ -437,8 +437,12 @@ hr {
 .animate, .animate-fadeIn {
 	visibility: hidden;
 }
-#other-works img {
+#other-works object{
 	max-height: 180px;
+}
+
+#other-works a:hover {
+	opacity: 0.5;
 }
 /* Contact */
 
@@ -454,6 +458,11 @@ hr {
 
 #contact h3 {
 	padding:0;
+}
+
+#contact a {
+	display: block;
+	text-align: center;
 }
 
 .btn-lg {
@@ -474,6 +483,15 @@ footer {
 	list-style: none;
 	display: inline-block;
 	padding-right: 10px;
+}
+
+.social-media a object {
+	width:40px;
+	height: 40px;
+}
+
+.social-media a:hover {
+	opacity: 0.6;
 }
 /* Portfolio-item Pages */
 
@@ -623,7 +641,8 @@ footer {
 	position: relative;
 }
 
-.portpage-pic .pic.web, .portpage-pic .pic.phone, .portpage-pic .pic.video-container {
+.portpage-pic .pic.web, .portpage-pic .pic.phone, 
+.portpage-pic .pic.video-container, .portpage-pic .pic.other {
 	width:70%;
 }
 
@@ -730,15 +749,6 @@ footer {
 	width: 100%;
 	height: 100%;
 	padding: 2em;
-}
-
-.social-media a img {
-	width:40px;
-	height: 40px;
-}
-
-.social-media a:hover {
-	opacity: 0.6;
 }
 
 /* Lightbox */
@@ -1290,11 +1300,12 @@ opacity: 1;
 
 	body .jumbotron.port-bkg {
 	 background-size: 90% !important;
-	 background-position: center 18%;
+	 background-position: center top 60px;
+     background-attachment: initial;
 	}
 
-	#rsb, #cal-print, #guardian {
-	 background-position: center 23%;
+	#rsb, #cal-print, #guardian, #covers, #trav-info {
+	 background-position: center top 150px;
 	}
 }
 

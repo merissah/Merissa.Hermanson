@@ -17,12 +17,17 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-<div class="container">
   <nav class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <div id="nav-logo" class="navbar-brand"><a href="index.html"><img class="img-responsive" src="img/logo.svg" alt="Merissa Hermanson Design"></a></div>
+        <div id="nav-logo" class="navbar-brand">
+          <a href="index.html">
+            <object data="img/logo.svg" type="image/svg+xml">
+              <img class="img-responsive" src="img/logo.png" alt="Merissa Hermanson Design">
+            </object> 
+          </a>
+        </div>
       </div>
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -35,8 +40,7 @@
       </div>
     </div>
   </nav>
-</div>
-<div class="jumbotron start" id="start">
+<section class="jumbotron start" id="start">
   <div id="table"></div>
   <div class="container">
     <h1>Welcome to my Studio</h1>
@@ -141,31 +145,40 @@
       <div id="books"><img class="img-responsive" src="img/Books-Plant.png" alt="books"/></div>
       <div id="palette"><img class="img-responsive" src="img/palette.png" alt="tablet"/></div>
   </div>
-</div>
+</section>
 
  <!-- <div class="dripwrapper">
     <div class="dripper"></div>
     <div class="drop"></div> 
   </div> -->
 
-<div class="row" id="about">
+<section id="about">
   <div class="container blue">
     <h2>A little <strong>ABOUT</strong> me</h2>
     <p>My name is Merissa Hermanson. I am a UI Designer & Front End Developer with 3+ years of experience. I craft elegant web user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. UI design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
     <div class="row">
-      <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"> <img class="img-responsive" src="img/about-graphic.svg" alt="Print Design">
+      <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4">
+        <object data="img/about-graphic.svg" type="image/svg+xml">
+          <img class="img-responsive" src="img/about-graphic.png" alt="Image Icon">
+        </object> 
         <div class="title">
           <h3>GRAPHIC DESIGNER</h3>
           <p>I design beautiful things that communicate effectively in order to achieve optimal results. I am able to do branding, print design, illustrations, inforgraphics, typograhpy and photography. I'm proficient with Illustrator, Photoshop, InDesign, and After Effects.</p>
         </div>
       </div>
-      <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"> <img class="img-responsive" src="img/about-ui.svg" alt="Illustration">
+      <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4">
+        <object data="img/about-ui.svg" type="image/svg+xml">
+          <img class="img-responsive" src="img/about-ui.png" alt="Computer Icon">
+        </object> 
         <div class="title">
           <h3>UI/UX DESIGNER</h3>
           <p>I am a passionate responsive web + UX/UI designer that focuses on usability, functionality, interactivity, and visual appeal. UI design is like telling a story. It needs to be told with clarity and purpose. Without purpose, it's just noise.</p>
         </div>
       </div>
-      <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"> <img class="img-responsive" src="img/about-dev.svg" alt="Web Development">
+      <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"> 
+        <object data="img/about-dev.svg" type="image/svg+xml">
+          <img class="img-responsive" src="img/about-dev.svg" alt="Start and end HTML tags">
+        </object> 
         <div class="title">
           <h3>FRONT END DEVELOPER</h3>
           <p>I truly enjoy crafting a design throughout the entire process. Developing the interface I've designed, I am able to make sure every interaction is exactly how it should be. I am proficient at HTML5, CSS3, Sass, jQuery, Bootstrap, Basic Javascript, and am familiar with Ruby and Ruby on Rails.</p>
@@ -173,27 +186,74 @@
       </div>
     </div>
   </div>
-</div>
-<div class="row" id="tools">
+</section>
+<section id="tools">
   <div class="container">
     <h2>Some <strong>TOOLS</strong> I use</h2>
     <ul class="row">
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_ps.svg"/></li>
-      <li class="col-sm-3 col-xs-6 long"><img src="img/tools_css.svg"/></li>
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_jquery.svg"/></li>
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_sublime.svg"/></li>
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_invision.svg"/></li>
-      <li class="col-sm-3 col-xs-6 long"><img src="img/tools_rails.svg"/></li>
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_bootstrap.svg"/></li>
-      <li class="col-sm-3 col-xs-6 long"><img src="img/tools_html.svg"/></li>
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_illustrator.svg"/></li>
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_github.svg"/></li>
-      <li class="col-sm-3 col-xs-6 long"><img src="img/tools_js.svg"/></li>
-      <li class="col-sm-3 col-xs-6"><img src="img/tools_sass.svg"/></li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_ps.svg" type="image/svg+xml">
+          <img src="img/tools_ps.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container long">
+        <object data="img/tools_css.svg" type="image/svg+xml">
+          <img src="img/tools_css.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_jquery.svg" type="image/svg+xml">
+          <img src="img/tools_jquery.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_sublime.svg" type="image/svg+xml">
+          <img src="img/tools_sublime.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_invision.svg" type="image/svg+xml">
+          <img src="img/tools_invision.png"/>
+      </object></li>
+      <li class="col-sm-3 col-xs-6 tool-container long">
+        <object data="img/tools_rails.svg" type="image/svg+xml">
+          <img src="img/tools_rails.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_bootstrap.svg" type="image/svg+xml">
+          <img src="img/tools_bootstrap.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container long">
+        <object data="img/tools_html.svg" type="image/svg+xml">
+          <img src="img/tools_html.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_illustrator.svg" type="image/svg+xml">
+          <img src="img/tools_illustrator.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_github.svg" type="image/svg+xml">
+          <img src="img/tools_github.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container long">
+        <object data="img/tools_js.svg" type="image/svg+xml">
+          <img src="img/tools_js.png"/>
+        </object>
+      </li>
+      <li class="col-sm-3 col-xs-6 tool-container">
+        <object data="img/tools_sass.svg" type="image/svg+xml">
+          <img src="img/tools_sass.png"/>
+        </object>
+      </li>
     </ul>
   </div>
-</div>
-<div class="row" id="portfolio">
+</section>
+<section id="portfolio">
   <div class="container blue">
     <h2>My <strong>PORTFOLIO</strong></h2>
     <div class="row portfolio-section" id="web">
@@ -384,43 +444,76 @@
       <h3>Other Works</h3>
       <hr />
       <div class="row icons">
-        <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"><a href="painting.html"><img class="img-responsive" src="img/other_easel.svg" alt="Print Design">
+        <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"><a href="painting.html">
+          <object data="img/other_easel.svg" type="image/svg+xml">
+            <img class="img-responsive" src="img/other_easel.png" alt="Easel Icon">
+          </object> 
           <h3>PAINTING</h3>
           </a> </div>
-        <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"><a href="animations.html"><img class="img-responsive" src="img/other_animation.svg" alt="Illustration">
+        <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"><a href="animations.html">
+          <object data="img/other_animation.svg" type="image/svg+xml">
+            <img class="img-responsive" src="img/other_animation.png" alt="Atom Icon">
+          </object> 
           <h3>ANIMATION</h3>
           </a> </div>
-        <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"><a href="http://merissahermansonphotography.com" target="_blank"><img class="img-responsive" src="img/other_camera.svg" alt="Web Development">
+        <div data-scroll-reveal="enter bottom" class="col-md-4 col-sm-4"><a href="http://merissahermansonphotography.com" target="_blank">
+          <object data="img/other_camera.svg" type="image/svg+xml">
+            <img class="img-responsive" src="img/other_camera.png" alt="Camera Icon">
+          </object>
           <h3>PHOTOGRAPHY</h3>
           </a> </div>
       </div>
     </div>
   </div>
-</div>
-<div class="row" id="contact">
+</section>
+<section id="contact">
   <div class="container">
     <h2><strong>CONTACT</strong></h2>
     <h3 class="text-center">Merissa.Hermanson@gmail.com</h3>
     <p>I'm only a click away</p>
-    <p><a href="mailto:merissa.hermanson@gmail.com">
+    <a href="mailto:merissa.hermanson@gmail.com">
       <button type="button" class="btn btn-primary inverse btn-lg">Contact Me</button>
-    </p>
+    </a>
   </div>
-</div>
-<footer class="row">
+</section>
+<footer>
   <div class="container">
     <ul class="social-media">
-      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fmerissahermanson.com"target="_blank"><img src="img/sm_g+.svg" alt="Google Plus"></a></li>
-      <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/sm_pintrist.svg" alt="Pintrist"></a></li>
-      <li><a href="https://www.facebook.com/sharer/sharer.php?u=Merissahermanson.com" target="_blank"><img src="img/sm_fb.svg" alt="Facebook"></a></li>
-      <li><a href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmerissahermanson.com" target="_blank"><img src="img/sm_twitter.svg" alt="Twitter"></a></li>
+      <li>
+        <a href="https://plus.google.com/share?url=http%3A%2F%2Fmerissahermanson.com"target="_blank">
+          <object data="img/sm_g+.svg" type="image/svg+xml">
+            <img src="img/sm_g+.png" alt="Google Plus">
+          </object>
+        </a>
+      </li>
+      <li>
+        <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmerissahermanson.com" target="_blank">
+          <object data="img/sm_pintrist.svg" type="image/svg+xml">
+            <img src="img/sm_pintrist.svg" alt="Pintrist">
+          </object>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=Merissahermanson.com" target="_blank">
+          <object data="img/sm_fb.svg" type="image/svg+xml">
+            <img src="img/sm_fb.svg" alt="Facebook">
+          </object>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmerissahermanson.com" target="_blank">
+          <object data="img/sm_twitter.svg" type="image/svg+xml">
+            <img src="img/sm_twitter.svg" alt="Twitter">
+          </object>
+        </a>
+      </li>
     </ul>
   </div>
 </footer>
 
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="js/scrollReveal.js"></script> 
-<script src="js/bootstrap.min.js"></script>
 <script src="js/easing.js"></script>  
 <script src="js/animatescroll.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
