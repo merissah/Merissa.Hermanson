@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+	<title><![CDATA[Merissa Hermanson Photography: Essays]]></title>
+	<link><![CDATA[http://merissahermansonphotography.com/essays/]]></link>
+	<description><![CDATA[Essays from Merissa Hermanson Photography]]></description>
+	<generator>http://koken.me</generator>
+	<lastBuildDate>Sat, 15 Nov 2014 07:42:27 -0500</lastBuildDate>
+	<atom:link href="http://merissahermansonphotography.com/feed/essays/recent.rss" rel="self" type="application/rss+xml" />	<item>
+	<title><![CDATA[Contact]]></title>
+	<link><![CDATA[http://merissahermansonphotography.com/essays/2014/05/contact/]]></link>
+	<guid><![CDATA[http://merissahermansonphotography.com/essays/2014/05/contact/]]></guid>
+	<pubDate>Sat, 17 May 2014 14:26:09 -0400</pubDate>
+	<description><![CDATA[Merissa Hermanson(865) 253-0272Merissa. Hermanson@gmail. com]]></description>
+	<content:encoded><![CDATA[<figure><figcaption>Merissa Hermanson(865) 253-0272Merissa. Hermanson@gmail. com</figcaption></figure>]]></content:encoded>
+	<media:credit role="photographer"><![CDATA[Merissa Hermanson]]></media:credit>
+	<dc:creator><![CDATA[Merissa Hermanson]]></dc:creator>
+</item>	<item>
+	<title><![CDATA[Pricing]]></title>
+	<link><![CDATA[http://merissahermansonphotography.com/essays/2014/05/pricing/]]></link>
+	<guid><![CDATA[http://merissahermansonphotography.com/essays/2014/05/pricing/]]></guid>
+	<pubDate>Sat, 17 May 2014 14:14:46 -0400</pubDate>
+	<description><![CDATA[Portrait Sessions Portrait sessions are at the location of your choice in the Knoxville area. Photography sessions can be scheduled during the week after 5:30pm or with more flexibility on weekends. &nbsp;Portrait sessions include:&nbsp;High-resolution…]]></description>
+	<content:encoded><![CDATA[<figure><figcaption>Portrait Sessions Portrait sessions are at the location of your choice in the Knoxville area. Photography sessions can be scheduled during the week after 5:30pm or with more flexibility on weekends. &nbsp;Portrait sessions include:&nbsp;High-resolution…</figcaption></figure>]]></content:encoded>
+	<media:credit role="photographer"><![CDATA[Merissa Hermanson]]></media:credit>
+	<dc:creator><![CDATA[Merissa Hermanson]]></dc:creator>
+</item>	</channel>
+</rss>
