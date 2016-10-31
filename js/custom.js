@@ -1,5 +1,3 @@
-window.sr = new scrollReveal();   
-
 $(document).ready(function() {
 
 //Scroll-spy

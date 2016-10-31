@@ -573,6 +573,10 @@ footer {
 	background-image: url(../img/bnr-ts.jpg);
 	background-size: 700px;
 }
+#sensorly {
+	background-image: url(../img/bnr-sen.jpg);
+	background-size: 700px;
+}
 #me {
 	background-image: url(../img/bnr-me.jpg);
 	background-size: 700px;
@@ -1308,7 +1312,7 @@ opacity: 1;
 
 	body .jumbotron.port-bkg {
 	 background-size: 90% !important;
-	 background-position: center top 60px;
+	 background-position: center top 90px;
      background-attachment: initial;
 	}
 

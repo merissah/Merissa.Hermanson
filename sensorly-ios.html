@@ -10,7 +10,7 @@
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400' rel='stylesheet' type='text/css'>
-<link href="css/home.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
@@ -40,57 +40,54 @@
     </div>
   </nav>
 </div>
-
-<div class="jumbotron port-bkg" id="ts">
+<div class="jumbotron port-bkg" id="sensorly">
   <ul class="nav-buttons">
-    <li><a href="sensorly-ios.html" class="left-arrow"></a></li>
-    <li><a href="me.html" class="right-arrow"></a></li>
+    <li><a href="#" class="left-arrow disabled"></a></li>
+    <li><a href="ts.html" class="right-arrow"></a></li>
   </ul>
 </div>
 <div class="container portfolio-content">
   <div class="row">
     <div class="col-md-9">
-      <h2>TowerSource</h2>
-      <p>TowerSource is the industry’s largest and most comprehensive independent vertical asset database. By providing granular, accurate information about tower location ownership and management, type, height, and more. TowerSource empowers tower professionals in any business sector to make better decisions regarding site evaluation and acquisition, competitor benchmarking and site portfolio revenues.
+      <h2>Sensorly</h2>
+      <p>Sensorly is a crowdsourced service, it gathers anonymous data from all users willing to share their experience and wanting to help others better understand what to expect from their carrier's wirelesss network. 
       </p>
-      <p>After TowerSource was aquired by Mosaik I completely re-designed the entire application. The application is very feature rich and was a challenge to design a simple intuitive interface that could contain all of the functionality requested, with the flexibility to add more features down the road. The application is built with Ruby on Rails, and I did most of the front end development for this project on top of the design.
+      <p>This project was a re-design of their original out dated app. The overall challenge was to keep some of the look and feel of the original app, so as not to alienate it's current users, while providing a more streamlined user experience and an updated user interface.
       </p>
     </div>
     <div class="col-md-3">
       <h3>Type</h3>
-      <p>Responsive Mapping Application</p>
+      <p>iOS Application</p>
       <h3>Application Owner</h3>
       <p>Mosaik Solutions</p>
     </div>
   </div>
   <div class="port-button">
-    <a href="https://invis.io/B61XSTIHY" target="_blank">
+    <a href="https://invis.io/6R6NYQAJK" target="_blank">
       <button type="button" class="btn btn-default btn-lg">View Prototype</button>
     </a>
-    <a href="https://towersource.com" target="_blank">
-      <button type="button" class="btn btn-primary btn-lg">Visit Site</button>
-    </a>  
+    <a href="https://itunes.apple.com/us/app/sensorly-coverage-speed-tests/id544269103?mt=8" target="_blank">
+      <button type="button" class="btn btn-primary btn-lg">View in App Store</button>
+    </a>   
   </div>
-  <div class="row">
-    <div class="portpage-pic">
-      <div class="video-container pic hidden-xs">
-        <div class="video-wrapper">
-          <video autoplay> 
-            <source src="video/laptop-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> 
-            <source src="video/laptop-video.webm" type='video/webm; codecs="vp8, vorbis"'>
-            <source src="video/laptop-video.ogg" type='video/ogg; codecs="theora, vorbis"'>
-            Your browser does not support the video tag.
-          </video>
-        </div>
+    <div class="portpage-pic app row">
+      <div class="pic col-md-4 col-sm-6">
+        <img class="img-responsive" src="img/port-sen-map.jpg" alt="Screen shot of Sensorly Map interface">
       </div>
-      <div class="pic web visible-xs">
-        <img class="img-responsive" src="img/port-ts2.jpg" alt="Screen shot of TowerSource application">
+      <div class="pic col-md-4 col-sm-6">
+        <img class="img-responsive" src="img/port-sen-map2.jpg" alt="Screen shot of Signal Insights interface">
       </div>
-      <div class="pic web">
-        <img class="img-responsive" src="img/port-ts1.jpg" alt="Screen shot of TowerSource home page">
+      <div class="pic col-md-4 col-sm-6">
+        <img class="img-responsive" src="img/port-sen-speedtest.jpg" alt="Screen shot of Signal Insights interface">
+      </div>
+      <div class="pic col-md-4 col-sm-6">
+        <img class="img-responsive" src="img/port-sen-results.jpg" alt="Screen shot of Signal Insights interface">
+      </div>
+      <div class="pic col-md-4 col-sm-6">
+        <img class="img-responsive" src="img/port-sen-activity.jpg" alt="Screen shot of Signal Insights interface">
       </div>
     </div>
-  </div>
+</div>
 </div>
 <footer>
   <div class="container">
@@ -127,6 +124,7 @@
   </div>
 </footer>
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/portfolio.js"></script>    
 </body>
 </html>
