@@ -322,6 +322,7 @@ p {
 #about object {
 	max-height: 150px;
 }
+
 #about img, #portfolio img, .painting img {
 	margin: auto;
 }
@@ -445,8 +446,12 @@ hr {
 .animate, .animate-fadeIn {
 	visibility: hidden;
 }
-#other-works object{
+#other-works object, #other-works svg {
 	max-height: 180px;
+}
+
+#other-works a {
+	display: block;
 }
 
 #other-works a:hover {
@@ -506,9 +511,9 @@ footer {
 .port-bkg {
 	width: 100%;
 	height: 300px;
-	background-position: center top;
+	background-position: center top 70px;
 	background-attachment: fixed;
-	background-size: 900px;
+	background-size: 700px;
 	margin-bottom: 40px;
 	text-align: center;
 	background-color: #e3e7ed;
@@ -558,80 +563,13 @@ footer {
 	text-align: center;
 	background-repeat: no-repeat;
 }
-#can-I-eat-this {
-	background-image: url(../img/bnr-eat.jpg);
-	background-size: 800px;
-}
-#travwell {
-	background-image: url(../img/bnr-trav.jpg);
-	background-size: 800px;
-}
-#csepp {
-	background-image: url(../img/bnr-csepp.jpg);
-}
-#ts {
-	background-image: url(../img/bnr-ts.jpg);
-	background-size: 700px;
-}
-#sensorly {
-	background-image: url(../img/bnr-sen.jpg);
-	background-size: 700px;
-}
-#me {
-	background-image: url(../img/bnr-me.jpg);
-	background-size: 700px;
-}
-#si {
-	background-image: url(../img/bnr-si.jpg);
-	background-size: 800px;
-}
-#theorypicker {
-	background-image: url(../img/bnr-theorypicker.jpg);
-	background-size: 700px;
-}
-#vost {
-	background-image: url(../img/bnr-vost.jpg);
-	background-size: 700px;
-}
-#nrc {
-	background-image: url(../img/bnr-nrc.jpg);
-	background-size: 700px;
-}
-#hcw {
-	background-image: url(../img/bnr-hcw.jpg);
-	background-size: 700px;
-}
-#nhspi {
-	background-image: url(../img/bnr-nhspi.jpg);
-	background-size: 700px;
-}
-#rsb {
-	background-image: url(../img/bnr-rsb.jpg);
-}
-#trav-info {
-	background-image: url(../img/bnr-trav-info.jpg);
-}
-#orau {
-	background-image: url(../img/bnr-orau.jpg);
-}
-#covers {
-	background-image: url(../img/bnr-covers.jpg);
-}
-#cal {
-	background-image: url(../img/bnr-cal.jpg);
-	background-size: 700px;
-}
-#guardian {
-	background-image: url(../img/bnr-guardian.jpg);
-}
-#cal-print {
-	background-image: url(../img/bnr-cal-print.jpg);
-}
 #animations {
 	background-image: url(../img/bnr-animations.jpg);
+	background-size: 900px;
 }
 #painting {
 	background-image: url(../img/bnr-painting.jpg);
+	background-size: 900px;
 }
 .portfolio-content h2, .portfolio-content p {
 	text-align: left;
