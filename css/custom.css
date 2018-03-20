@@ -1248,15 +1248,24 @@ opacity: 1;
 		line-height:16px;
 	}
 
-	body .jumbotron.port-bkg {
-	 background-size: 90% !important;
-	 background-position: center top 90px;
-     background-attachment: initial;
+	.port-bkg {
+		height:260px;
 	}
 
-	#rsb, #cal-print, #guardian, #covers, #trav-info {
-	 background-position: center top 150px;
+	.jumbotron.port-bkg {
+	 background-size: 90% !important;
+	 background-position: center top 60px;
+   background-attachment: initial;
 	}
+
+	.jumbotron.port-bkg.phone {
+		background-position: center top 90px; 
+	}
+
+	.jumbotron.port-bkg.print {
+		background-position: center top 75px; 
+	}
+
 }
 
 /* =============================================================================================== */
@@ -1283,8 +1292,10 @@ opacity: 1;
 /*animations*/
 
 .animated {
+	-moz-animation-duration: 1s;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  -moz-animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -1324,6 +1335,7 @@ opacity: 1;
 }
 
 .bounceInDown {
+	-moz-animation-name: bounceInDown;
   -webkit-animation-name: bounceInDown;
           animation-name: bounceInDown;
 		  visibility:visible !important;
@@ -1398,6 +1410,7 @@ opacity: 1;
 }
 
 .bounceInLeft {
+	-moz-animation-name: bounceInLeft;
   -webkit-animation-name: bounceInLeft;
           animation-name: bounceInLeft;
 		  visibility:visible !important;
@@ -1472,6 +1485,7 @@ opacity: 1;
 }
 
 .bounceInRight {
+	-moz-animation-name: bounceInRight;
   -webkit-animation-name: bounceInRight;
           animation-name: bounceInRight;
 		  visibility:visible !important;
@@ -1546,6 +1560,7 @@ opacity: 1;
 }
 
 .bounceOutLeft {
+	-moz-animation-name: bounceOutLeft;
   -webkit-animation-name: bounceOutLeft;
           animation-name: bounceOutLeft;
 }
@@ -1579,6 +1594,7 @@ opacity: 1;
 }
 
 .bounceOutRight {
+	-moz-animation-name: bounceOutRight;
   -webkit-animation-name: bounceOutRight;
           animation-name: bounceOutRight;
 }
@@ -1622,6 +1638,7 @@ opacity: 1;
 }
 
 .bounceOutUp {
+	-moz-animation-name: bounceOutUp;
   -webkit-animation-name: bounceOutUp;
           animation-name: bounceOutUp;
 }

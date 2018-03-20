@@ -110,7 +110,7 @@ $('body').scrollspy({ target: '#navbar' });
   });
 
   TweenMax.set("#tabletop-easel", {top: "-=950"});
-  TweenMax.set("#palette", {left: "-=1500"});
+  TweenMax.set("#palette", {left: "-=2200"});
   TweenMax.set("#brushes", {right: "-=950"});
   var $computer = $("#computer");
   var $easel = $("#tabletop-easel");
@@ -130,7 +130,7 @@ $('body').scrollspy({ target: '#navbar' });
         onReverseComplete: function () {$easel.removeClass("bounceInDown").addClass("bounceOutUp");}
         }
     )
-    .to("#palette", 1, {left: "+=1500",
+    .to("#palette", 1, {left: "+=2200",
         onStart: function () {$palette.addClass("animated bounceInLeft").removeClass("bounceOutLeft");},
         onReverseComplete: function () {$palette.removeClass("bounceInLeft").addClass("bounceOutLeft");}
         }
