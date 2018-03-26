@@ -252,64 +252,6 @@ p {
 	bottom: 0px;
 }
 
-/* Dripper */
-
-/*.dripwrapper {
-   z-index: 50;
-   width: 15px;
-   position: absolute;
-   right: 0px;
-   left:226px;
-   margin:auto;
-   height: 90%;
-   top: 437px;
-   opacity: 0;
-} 
-.dripper, .drop {
-  position: absolute;
-  background: #d1edff;
-  top: 0px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  height: 10px;
-  border-radius: 50%;
-  border: 5px solid #d1edff;
-}
-
-.drop {
-	width: 10px;
-	height: 10px;
-	top: 10px;
-	-webkit-animation: drips 10s cubic-bezier(1, 0.75, 0.98, 1.3) 200ms infinite;
-}
-
-@-webkit-keyframes drips {
-  0% {
-    top: 0px;
-    width: 2px;
-    height: 2px;
-  }
-  30% {
-    top: 3px;
-    width: 2px;
-    height: 2px;
-  }
-  75% {
-    top: 8px;
-    width: 10px;
-    height: 10px;
-  }
-  99% {
-    top: 99%;
-  }
-  100% {
-    top: 100%;
-    width: 10px;
-    height: 10px;
-  }
-}*/
-
 
 /* About */
 
@@ -333,7 +275,7 @@ p {
 /*tools*/
 #tools {
 	padding-top: 30px;
-	background-color: #f7f7f7;
+	background-color: #edf2f7;
 }
 #tools ul {
 	padding:0;
@@ -367,6 +309,8 @@ p {
 	margin: .7em;
 	position: relative;
 	overflow: hidden;
+	padding:0;
+	float:inherit;
 }
 .portfolio-section .portfolio-item {
 	height: auto;
@@ -513,10 +457,10 @@ footer {
 	height: 300px;
 	background-position: center top 70px;
 	background-attachment: fixed;
-	background-size: 700px;
+	background-size: 540px;
 	margin-bottom: 40px;
 	text-align: center;
-	background-color: #e3e7ed;
+	background-color: #d7e4f3;
 	background-repeat: no-repeat;
 }
 
